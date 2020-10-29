@@ -36,14 +36,14 @@ export default function TemporaryDrawer() {
             <p>What are you selling?</p>
          </div>
          {file ?
-            <div>
+            <div style={{marginTop: 60}}>
                <MoreDetails file={file}/>
                <div className={style.approve}>
                   <h3>Done</h3>
                </div>
             </div>
             :
-            <div>
+            <div style={{marginTop: 60}}>
                <Category/>
                <Photo setFile={setFile}/>
             </div>
