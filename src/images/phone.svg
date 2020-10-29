@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="100" height="100" id="svg6343" version="1.1" inkscape:version="0.48.5 r" sodipodi:docname="phone_mobile_device_communication_call.svg">
+  <defs id="defs6345">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath5445">
+      <path sodipodi:nodetypes="cccccccc" inkscape:connector-curvature="0" id="path5447" d="m 168.46249,88.116169 0,288.004431 301.49142,-0.0698 z m 49.16779,149.421201 100.37536,96.11324 -101.0147,-1.06537 z" style="fill:#e74c3c;fill-opacity:1;stroke:none"/>
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath6336">
+      <path sodipodi:nodetypes="cccccccc" inkscape:connector-curvature="0" id="path6338" d="m 168.46249,88.116169 0,288.004431 301.49142,-0.0698 z m 49.16779,149.421201 100.37536,96.11324 -101.0147,-1.06537 z" style="fill:#e74c3c;fill-opacity:1;stroke:none"/>
+    </clipPath>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="3.959798" inkscape:cx="8.25468" inkscape:cy="46.060806" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1366" inkscape:window-height="713" inkscape:window-x="0" inkscape:window-y="26" inkscape:window-maximized="1"/>
+  
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-952.36218)">
+    <path sodipodi:type="arc" style="fill:#27bec4;fill-opacity:1;stroke:none" id="path2992" sodipodi:cx="-594.28571" sodipodi:cy="-91.428574" sodipodi:rx="154.28572" sodipodi:ry="154.28572" d="m -439.99998,-91.428574 a 154.28572,154.28572 0 1 1 -308.57145,0 154.28572,154.28572 0 1 1 308.57145,0 z" transform="matrix(0.29166665,0,0,0.29166665,223.33332,1029.0288)"/>
+    <g id="g3767" transform="matrix(0.93051012,0,0,0.93051012,3.4744941,69.654022)">
+      <rect rx="5.0983438" ry="3.5340815" y="970.80646" x="33.127369" height="63.111389" width="33.74527" id="rect4308" style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26177764;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
+      <path transform="matrix(0.04820263,0,0,0.04820263,55.233415,1042.0228)" d="m -71.42857,-250.49496 c 0,20.51343 -16.629423,37.14285 -37.14286,37.14285 -20.51343,0 -37.14285,-16.62942 -37.14285,-37.14285 0,-20.51344 16.62942,-37.14286 37.14285,-37.14286 20.513437,0 37.14286,16.62942 37.14286,37.14286 z" sodipodi:ry="37.142857" sodipodi:rx="37.142857" sodipodi:cy="-250.49496" sodipodi:cx="-108.57143" id="path4317" style="fill:#ff642f;fill-opacity:1;stroke:none" sodipodi:type="arc"/>
+      <path sodipodi:type="arc" style="fill:#ff642f;fill-opacity:1;stroke:none" id="path4319" sodipodi:cx="-108.57143" sodipodi:cy="-250.49496" sodipodi:rx="37.142857" sodipodi:ry="37.142857" d="m -71.42857,-250.49496 c 0,20.51343 -16.629423,37.14285 -37.14286,37.14285 -20.51343,0 -37.14285,-16.62942 -37.14285,-37.14285 0,-20.51344 16.62942,-37.14286 37.14285,-37.14286 20.513437,0 37.14286,16.62942 37.14286,37.14286 z" transform="matrix(0.03467658,0,0,0.03467658,48.029253,985.16302)"/>
+      <rect ry="0.7083931" y="975.82104" x="47.494259" height="1.4167862" width="7.9855232" id="rect4321" style="fill:#ff642f;fill-opacity:1;stroke:none"/>
+      <rect style="fill:#f2ebd9;fill-opacity:1;stroke:none" id="rect4310" width="28.525324" height="45.429996" x="35.737331" y="980.64252"/>
+    </g>
+  </g>
+
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description about="https://iconscout.com/legal#licenses" dc:title="phone_mobile_device_communication_call" dc:description="phone_mobile_device_communication_call" dc:publisher="Iconscout" dc:date="2017-04-26" dc:format="image/svg+xml" dc:language="en">
+				<dc:creator>
+					<rdf:Bag>
+						<rdf:li>Vignesh Oviyan</rdf:li>
+					</rdf:Bag>
+				</dc:creator>
+			</rdf:Description>
+		</rdf:RDF>
+    </metadata></svg>

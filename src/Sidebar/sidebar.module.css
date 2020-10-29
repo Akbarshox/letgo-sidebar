@@ -1,0 +1,188 @@
+.appbar {
+    height: 60px;
+    box-shadow: 0 0 5px 0 #ccc;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    background: #fff;
+    width: 500px;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.appbar p {
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appbar img {
+    width: 35px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.category {
+    padding: 15px 30px 0 30px;
+}
+
+.category p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #969696;
+    font-family: Calibri, sans-serif;
+}
+
+.category img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoryName {
+    font-size: 12px !important;
+    text-align: center;
+}
+
+.categoryBorder {
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.categoryBorderInner {
+    border: 1px solid #eee;
+    height: 90px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.categoryBorderInner:hover {
+    transition: transform 0.5s ease;
+    border: 1px solid #7E7E7E;
+}
+
+.back {
+    background: #efefef;
+}
+
+.check {
+    width: 30px !important;
+    height: auto;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 70px !important;
+}
+
+.photo {
+    margin-bottom: 50px;
+}
+
+.photo input {
+    visibility: hidden;
+}
+
+.imageLabel {
+    content: none;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+
+.imageLabel:hover {
+    border-color: #FFA6D7;
+}
+
+.imageLabel h3 {
+    text-align: center;
+    color: #3e3e3e;
+}
+
+.imageLabel p {
+    text-align: center;
+    font-size: 14px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -10px;
+}
+
+.imageLabel img {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+/*Upload More*/
+.moreDetailsGrid img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.uploadMore {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F160B0;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.uploadMore:hover {
+    color: #F160B0 !important;
+}
+
+.uploadMore input {
+    visibility: hidden;
+}
+
+.uploadMore img {
+    width: 30px;
+    margin-left: 33%;
+}
+
+.uploadMore p {
+    width: 100%;
+    font-size: 14px !important;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.priceFloat {
+    float: right;
+}
+
+.bottom {
+    margin-bottom: 100px;
+}
+
+.approve {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.approve h3 {
+    text-align: center;
+    background: #F160B0;
+    padding: 8px;
+    border-radius: 14px;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 14px;
+    color: #fff;
+}
+
