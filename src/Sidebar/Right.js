@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
@@ -7,6 +7,7 @@ import close from '../images/close.svg';
 import Category from "./Category";
 import Photo from "./Photo";
 import MoreDetails from "./MoreDetails";
+import {Store} from "../Store";
 
 const useStyles = makeStyles({
    list: {
@@ -19,11 +20,11 @@ const useStyles = makeStyles({
 
 export default function TemporaryDrawer() {
    const classes = useStyles();
-   const [state, setState] = React.useState(false);
-   const [file, setFile] = React.useState(null);
+   const {state} = useContext(Store);
+   const [states, setState] = React.useState(false);
 
    const toggleDrawer = (side, open) => event => {
-      setState(!state)
+      setState(!states)
    };
 
    const sideList = side => (
@@ -35,9 +36,9 @@ export default function TemporaryDrawer() {
             <img src={close} alt="close" onClick={toggleDrawer(false)}/>
             <p>What are you selling?</p>
          </div>
-         {file ?
+         {state.images.length !== 0 ?
             <div style={{marginTop: 60}}>
-               <MoreDetails file={file}/>
+               <MoreDetails/>
                <div className={style.approve}>
                   <h3>Done</h3>
                </div>
@@ -45,7 +46,7 @@ export default function TemporaryDrawer() {
             :
             <div style={{marginTop: 60}}>
                <Category/>
-               <Photo setFile={setFile}/>
+               <Photo/>
             </div>
          }
       </div>
@@ -54,7 +55,7 @@ export default function TemporaryDrawer() {
    return (
       <div>
          <Button onClick={toggleDrawer(true)}>Right</Button>
-         <Drawer anchor='right' open={state}>
+         <Drawer anchor='right' open={states}>
             {sideList('right')}
          </Drawer>
       </div>

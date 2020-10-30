@@ -186,3 +186,45 @@
     color: #fff;
 }
 
+/*--------------------------*/
+.image {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.trash {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 85%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image:hover .image {
+    opacity: 0.3;
+}
+
+.image:hover .trash {
+    opacity: 1;
+}
+
+.trash img {
+    width: 30px;
+    height: auto;
+    background: #3e3e3e;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}

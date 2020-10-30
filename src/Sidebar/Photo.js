@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import style from './sidebar.module.css';
 import image from '../images/image.svg';
+import {Store} from "../Store";
 
 export default function Photo(props) {
-
+   const {dispatch} = useContext(Store);
    const handleChange = (e) => {
-      let image = URL.createObjectURL(e.target.files[0])
-      props.setFile(image)
+      let data = URL.createObjectURL(e.target.files[0])
+      return dispatch({type: 'IMAGE', payload: {data}})
    }
 
    return (

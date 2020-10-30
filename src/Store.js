@@ -10,7 +10,6 @@ const InitialState = {
 export function StoreProvider(props) {
    const [state, dispatch] = useReducer(reducer, InitialState);
    const value = {state: state, dispatch: dispatch}
-
    return (
       <Store.Provider value={value}>{props.children}</Store.Provider>
    )

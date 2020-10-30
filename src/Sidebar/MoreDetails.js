@@ -1,31 +1,42 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import style from './sidebar.module.css';
+import Checkbox from '@material-ui/core/Checkbox';
+import TextField from '@material-ui/core/TextField';
 import Grid from "@material-ui/core/Grid";
 import images from '../images/image.svg';
-import TextField from '@material-ui/core/TextField';
-import Checkbox from '@material-ui/core/Checkbox';
+import trash from '../images/trash.svg';
+import {Store} from "../Store";
 
-export default function MoreDetails(props) {
-   const [image, setImage] = useState([{img: props.file}])
+export default function MoreDetails() {
    const [checked, setChecked] = React.useState(false);
+   const {state, dispatch} = useContext(Store);
+
    useEffect(() => {
-      localStorage.setItem('images', JSON.stringify(image));
-   }, [image])
+      localStorage.setItem('images', JSON.stringify(state.images));
+   }, [state.images])
    const handleChange = (e) => {
       let data = URL.createObjectURL(e.target.files[0])
-      setImage(image => [...image, {img: data}])
+      return dispatch({type: 'IMAGE', payload: {data}})
    }
    const handleChangeable = (event) => {
       setChecked(event.target.checked);
    };
-   // console.log(localStorage.getItem('images'))
+   const handleDelete = (e) => {
+      return dispatch({type: 'DELETE', payload: e})
+   }
+
    return (
       <div className={style.category}>
          <h3>Images</h3>
          <Grid container className={style.moreDetailsGrid} spacing={3}>
-            {image ? image.map((e, i) =>
-               <Grid item xs={4} key={i}><img src={e.img} alt=""/></Grid>
-            ) : ''}
+            {state.images.map((e, i) =>
+               <Grid item xs={4} key={i}>
+                  <div className={style.image}>
+                     <img src={e.data} alt=""/>
+                     <div className={style.trash} onClick={() => handleDelete(e)}><img src={trash} alt=""/></div>
+                  </div>
+               </Grid>
+            )}
          </Grid>
          <p>Tip: add at least 3 photos</p>
          <label htmlFor="uploadMore" className={style.uploadMore}>
